@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+
+/* commmon utilitis */
+.body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.Banner img{
+    position: ;
+    height: 100%;
+    width: 100%;
+}
+.header{
+
+}
+
+.blog{
+    background-color: rgb(204, 18, 18);
+}
+.text{
+    color: white;
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+    margin: 40px
+}
+.transfer{
+
+}
+.transfer-live{
+
+
+}
+
+.thumbnail img{
+
+}
+
