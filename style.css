@@ -1,39 +1,301 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* commmon utilitis */
-.body{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-   
-}
-.Banner img{
-    position: ;
-    height: 100%;
-    width: 100%;
-}
-.header{
-
+/* root part */
+:root {
+  --color-primary: #000000;
+  --color-border-primary: #000000;
+  --color-secondery: #f23000;
+  --color-hover-red: #2c5a97;
+  --color-icon: rgba(22, 22, 22, 0.7);
+  --color-footer-link: #b9b9b9;
+  --color-white: #ffffff;
+  --color-hover-white: #ffffff;
+  --color-footer: #1e272e;
 }
 
-.blog{
-    background-color: rgb(204, 18, 18);
-}
-.text{
-    color: white;
-    background-color: black;
-    display: flex;
-    border-radius: 10px;
-    margin: 40px
-}
-.transfer{
-
-}
-.transfer-live{
-
-
+/* first part started */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.thumbnail img{
-
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-primary);
+  line-height: 25px;
 }
 
+p,ul,h1,h2,h3,h4,h5,h6{
+  margin: 0px;
+}
+
+p {
+  color: var(--color-white);
+}
+
+section {
+  width: 90%;
+  margin: 50px auto;
+}
+.image-fluid {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+/* first part finished */
+
+
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 5px;
+}
+.btn-banner {
+  padding: 16px 45px;
+  background-color: var(--color-secondery);
+  color: var(--color-white);
+  position: relative;
+}
+.btn-active {
+  background-color: var(--color-secondery);
+  color: var(--color-white);
+}
+.btn-small {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 6px 12px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.4s all ease;
+}
+/* btn css end */
+
+/* main css part start */
+/* banner part start */
+.banner {
+  background-color: var(--color-primary);
+  border-radius: 30px;
+}
+.banner_content {
+  display: flex;
+  justify-content: space-between;
+}
+.banner_left {
+  width: 45%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.banner_right {
+  width: 52%;
+  padding-top: 35px;
+}
+.banner_img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100%;
+}
+.banner_img img {
+  width: 75%;
+}
+.banner_text {
+  padding-left: 80px;
+}
+.banner_text h1 {
+  margin-bottom: 20px;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+.banner_text p {
+  margin-bottom: 20px;
+}
+.btn-banner::before {
+  content: url(../images/right.png);
+  position: absolute;
+  top: 33%;
+  transition: 0.5s all ease;
+  right: 20%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.btn-banner:hover.btn-banner::before {
+  right: 7%;
+  opacity: 1;
+}
+.d-lg-none {
+  display: none;
+}
+
+/* banner part end */
+
+/* live match part start */
+
+.live_match_content {
+  display: flex;
+  justify-content: space-between;
+}
+.live_match_left {
+  width: 300px;
+  max-height: 276px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: var(--color-primary);
+  margin-right: 25px;
+  border-radius: 10px;
+}
+.live_btn {
+  display: block;
+  width: 100%;
+  padding: 16px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.4s all ease;
+}
+.live_btn:hover {
+  background-color: var(--color-hover-red);
+  color: var(--color-white);
+}
+.live_btn:last-child {
+  margin-bottom: 0;
+}
+.live_match_right {
+  box-sizing: border-box;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 20px;
+}
+.live_match_item {
+  border: 1px solid var(--color-footer-link);
+  border-radius: 10px;
+}
+.live_match_item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.match_item_bottom {
+  padding: 20px;
+}
+.match_item_bottom h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.icon_bpx {
+  display: flex;
+}
+.icon_bpx p {
+  color: var(--color-footer-link);
+  display: flex;
+  align-items: center;
+}
+.icon_bpx p span {
+  margin-left: 15px;
+}
+.icon_2 {
+  margin-left: 50px;
+}
+.btn-small:hover {
+  background-color: var(--color-secondery);
+  border-color: var(--color-secondery);
+  color: var(--color-white);
+}
+.btn_for_md {
+  padding: 16px 35px;
+  margin: 0 auto;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  display: none;
+}
+/* live match part end */
+
+/* footer part start */
+.footer {
+  padding: 60px 0;
+  background-color: var(--color-footer);
+}
+hr {
+  width: 90%;
+  margin: 40px auto;
+}
+.footer_top_text {
+  text-align: center;
+}
+.footer_top_text h3 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.footer_menu,
+.social_link {
+  text-align: center;
+}
+.footer_menu p a,
+.social_link p a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-footer-link);
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px;
+}
+/* footer part end */
+/* =================================== */
+/* upcomming page start */
+.upcomming_match {
+  padding: 40px 25px;
+}
+.live_match_item.upcomming_match img {
+  border-radius: 0;
+}
+.vs_match p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.vs_bottom {
+  margin-top: 20px;
+  padding: 0;
+}
+.vs_bottom h3,
+.vs_bottom p {
+  text-align: center;
+}
+.vs_bottom p {
+  color: var(--color-footer-link);
+}
+
+/* upcomming page end */
+/* =================================== */
+
+/* main css part end */ ;

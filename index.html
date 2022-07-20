@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>Assignment-2</title>
-</head>
-
-<body>
-
-<section class="header">
-    <div class="text">
-        <h1>The Greatest shown on the earth</h1>
-        <div><p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ab totam perspiciatis, beatae quisquam quam inventore veritatis culpa atque, magni tempore provident eveniet quasi natus cum aliquid rem minus ullam.
-        </p>
+  </head>
+  <body>
+    <!-- Banner Start-->
+    <section class="banner">
+      <div class="banner_content">
+        <div class="banner_left">
+          <div class="banner_text">
+            <h1>The Greatest show on the earth</h1>
+            <p class="d-md-sm-none">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+            <p class="d-lg-none d-md-sm-block">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+            </p>
+            <a href="#" class="btn btn-banner">Watch Live</a>
+          </div>
         </div>
-        
-    <div class="Banner">
-        <img src="Banner Image.png" alt="Banner Image"> 
-    </div>
-</section>
-   
-    <!-- blog part -->
-
-<section class="blog">
-    <div class="thumbnail">
-        <img src="Blog Image.png" alt="Blog Image">
+        <div class="banner_right">
+          <div class="banner_img">
+            <img
+              src="images/Banner Image.png"
+              class="image-fluid"
+              alt="world cup"
+            />
+          </div>
         </div>
-
-    <div class="transfer">
-        <h6>Transfer</h6>
-    </div>
-    <div class="transfer-live"></div>
-    <p>Transfer Live: Chlesea in talks
-        over Kimpenbe transfer</p>
-
-
-</section>
-
-
-
-</body>
-</html>
+      </div>
+    </section>
+    <!-- banner part end -->
+    <!-- live match list start -->
+    <section class="live_match">
+      <div class="live_match_box">
+        <div class="live_match_content">
+          <div class="live_match_left">
+            <div class="live_btn_list">
+              <a href="upcomming.html" class="btn live_btn">Upcoming Match</a>
+              <a href="group.html" class="btn live_btn">All Group</a>
+              <a href="index.html" class="btn live_btn btn-active blog_btn"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div class="live_match_right">
+            <!-- single grid start -->
+            <div class="live_match_item">
+              <img
+                src="images/Blog Image.png"
+                class="image-fluid"
+                alt="world cup"
+              />
+              <div class="match_item_bottom">
+                <a href="#" class="btn-small">Transfer</a>
+                <h3>Transfer Live: Chlesea in talks over Kimpenbe transfer</h3>
+                <div class="icon_bpx">
+                  <p>
+                    <img
+                      src="images/Time Icon.png"
+                      class="image-fluid"
+                      alt="world cup"
+                    /><span>10h</span>
+                  </p>
+                  <p class="icon_2">
+                    <img
+                      src="images/Chat Icon.png"
+                      class="image-fluid"
+                      alt="world cup"
+                    /><span>23</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- single grid end -->
